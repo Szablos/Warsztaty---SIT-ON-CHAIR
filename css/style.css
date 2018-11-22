@@ -28,12 +28,14 @@ body {
 }
 
 .center {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
     /*border: 1px solid black;*/
 }
 
 #naviBackground {
+    position: fixed;
+    z-index: 100;
     background-color: black;
     width: 100%;
     height: 30px;
@@ -138,7 +140,7 @@ ol > li > ul > li:hover > a {
 }
 
 .container__naglowek {
-    width: 35%;
+    width: 40%;
     height: 75%;
     position: absolute;
     top: 17%;
@@ -168,7 +170,7 @@ h1 {
 
 .container__naglowek p {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .header__background button {
@@ -190,4 +192,87 @@ button:focus {
 button:hover {
     background-color: #00d2b1;
     cursor: pointer;
+}
+
+/*-------------------------------       Sekcja 1      ------------------------------------*/
+
+.container__section__1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image__1 {
+    width: 329px;
+    height: 225px;
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+}
+
+.image__2 {
+    width: 329px;
+    height: 225px;
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+}
+
+.opis__tlo {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    opacity: .5;
+    margin-top: 130px;
+}
+
+.opis {
+    padding: 20px;
+    width: 100%;
+    height: 30%;
+    margin-top: 130px;
+}
+
+.findsAllInputs{
+    width: 329px;
+    height: 250px;
+    border: 1px solid #dfdfdf;
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: ralewaybold;
+    text-decoration: none;
+    position: relative;
+}
+
+h3:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 130px;
+    height: 6px;
+    background-color: #24BA9F;
+}
+
+.findsAllInputs p {
+    margin-top: 30px;
+    color: #a4a4a4;
+}
+
+.obraz {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/*---------------------------      Cennik     ----------------------------*/
+
+.cennik {
+    position: relative;
+    height: 500px;
+}
+
+.sekcja__2__back {
+    margin-top: 70px;
+    width: 100%;
+    background-color: #F1F1F1;
 }
