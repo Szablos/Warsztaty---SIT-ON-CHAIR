@@ -159,6 +159,32 @@ ol > li > ul > li:hover > a {
     left: 50px;
 }
 
+.left {
+    position: absolute;
+    content: '';
+    font-family: ralewayregular;
+    width: 50px;
+    height: 50px;
+    top: 180px;
+    left: 30px;
+    color: #24BA9F;
+    font-size: 90px;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    content: '';
+    font-family: ralewayregular;
+    width: 50px;
+    height: 50px;
+    top: 180px;
+    right: 30px;
+    color: #24BA9F;
+    font-size: 90px;
+    cursor: pointer;
+}
+
 .header__background span {
     color: #24BA9F;
     font-family: ralewaybold;
@@ -412,3 +438,21 @@ h3 {
     top: 470px;
     left: 100px;
 }
+
+/*------------------------------------ FOOTER -----------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 110px;
+    font-family: ralewayregular;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    color: #919191;
+    padding: 20px;
+}
+
+footer > span, footer > p {
+    margin-top: 20px;
+}
+
