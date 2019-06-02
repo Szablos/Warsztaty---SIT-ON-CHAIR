@@ -2,7 +2,7 @@ footer {
   @include main-width(1440px, 100%);
 
   .footer_container {
-    width: 100%;
+    @include main-width(1440px, 90% - 2%);
     height: 110px;
     font-size: 1.1rem;
     display: flex;
