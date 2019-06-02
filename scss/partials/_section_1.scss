@@ -1,0 +1,103 @@
+%descriptionBack {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  opacity: .5;
+  margin-top: 130px;
+}
+
+%imageDescription {
+  padding: 20px;
+  width: 100%;
+  height: 30%;
+  margin-top: 130px;
+}
+
+.container__section__1 {
+  @include main-width(1440px, 90%);
+  display: flex;
+  justify-content: flex-start;
+
+  .image {
+      margin-top: 30px;
+      margin-left: 30px;
+  }
+
+  .image__1 {
+      width: 329px;
+      height: 225px;
+      background-image: url("../images/box1_img.jpg");
+      background-size: cover;
+
+      .description_background {
+        @extend %descriptionBack;
+
+        .description {
+          @extend %imageDescription;
+
+          h3 {
+            font-family: ralewaybold;
+            text-decoration: none;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                width: 130px;
+                height: 6px;
+                background-color: $fontSpecialColor;
+            }
+          }
+        }
+      }
+  }
+
+  .image__2 {
+      width: 329px;
+      height: 225px;
+      background-image: url("../images/box2_img.jpg");
+      background-size: cover;
+
+      .description_background {
+        @extend %descriptionBack;
+
+        .description {
+          @extend %imageDescription;
+
+          h3 {
+            font-family: ralewaybold;
+            text-decoration: none;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                width: 130px;
+                height: 6px;
+                background-color: $fontSpecialColor;
+            }
+          }
+        }
+      }
+  }
+
+  .findsAllInputs{
+      width: 329px;
+      height: 250px;
+      border: 1px solid #dfdfdf;
+      padding-top: 30px;
+      padding-left: 15px;
+      font-size: 14px;
+
+      h3 {
+        font-family: ralewaybold;
+      }
+
+      p {
+          margin-top: 30px;
+          color: #a4a4a4;
+      }
+  }
+}
