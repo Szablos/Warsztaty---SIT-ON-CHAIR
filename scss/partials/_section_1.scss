@@ -28,6 +28,7 @@
       height: 225px;
       background-image: url("../images/box1_img.jpg");
       background-size: cover;
+      cursor: pointer;
 
       .description_background {
         @extend %descriptionBack;
@@ -43,6 +44,7 @@
       height: 225px;
       background-image: url("../images/box2_img.jpg");
       background-size: cover;
+      cursor: pointer;
 
       .description_background {
         @extend %descriptionBack;
