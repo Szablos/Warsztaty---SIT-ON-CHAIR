@@ -1,0 +1,9 @@
+@mixin main-width($maxWidth, $width) {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  width: $width;
+}
+
+.main-width {
+  @include main-width(1440px, 100%);
+}
