@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Sit On Chair</title>
 </head>
 <body>
 
-    <nav id="naviBackground">
-
-        <div class="center navigation">
-            <span class="logo">SIT <span>ON</span> CHAIR</span>
-            <ol>
-                <li id="przesuniecie"><a href="#">O FIRMIE</a>
-                    <ul>
-                        <li><a href="#">Aktualności</a></li>
-                        <li><a href="#">Nasz team</a></li>
-                        <li><a href="#">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">GALERIA</a></li>
-                <li><a href="#">KONTAKT</a></li>
-            </ol>
-        </div>
-
-    </nav>
+  <div class="main-width">
+    <header>
+      <nav class="header__navigation">
+        <span class="logo">SIT <span>ON</span> CHAIR</span>
+        <ol class="navigation_list">
+            <li id="drop"><a href="#">O FIRMIE</a>
+                <ul id="dropdown">
+                    <li><a href="#">Aktualności</a></li>
+                    <li><a href="#">Nasz team</a></li>
+                    <li><a href="#">Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="#">GALERIA</a></li>
+            <li><a href="#">KONTAKT</a></li>
+        </ol>
+      </nav>
+    </header>
 
     <section class="slider">
 
@@ -146,5 +146,8 @@
         <span>SIT <b>ON</b> CHAIR</span>
     </footer>
 
+  </div>
+
+  <script src="./js/menu.js"></script>
 </body>
 </html>
