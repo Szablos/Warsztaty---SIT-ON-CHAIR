@@ -34,21 +34,6 @@
 
         .description {
           @extend %imageDescription;
-
-          h3 {
-            font-family: ralewaybold;
-            text-decoration: none;
-            position: relative;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 20px;
-                width: 130px;
-                height: 6px;
-                background-color: $fontSpecialColor;
-            }
-          }
         }
       }
   }
@@ -64,21 +49,6 @@
 
         .description {
           @extend %imageDescription;
-
-          h3 {
-            font-family: ralewaybold;
-            text-decoration: none;
-            position: relative;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 20px;
-                width: 130px;
-                height: 6px;
-                background-color: $fontSpecialColor;
-            }
-          }
         }
       }
   }
@@ -91,13 +61,24 @@
       padding-left: 15px;
       font-size: 14px;
 
-      h3 {
-        font-family: ralewaybold;
-      }
-
       p {
           margin-top: 30px;
           color: #a4a4a4;
       }
+  }
+
+  h3 {
+    font-family: ralewaybold;
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 130px;
+        height: 6px;
+        background-color: $fontSpecialColor;
+    }
   }
 }

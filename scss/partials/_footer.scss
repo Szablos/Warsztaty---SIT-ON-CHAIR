@@ -1,0 +1,17 @@
+footer {
+  @include main-width(1440px, 100%);
+
+  .footer_container {
+    width: 100%;
+    height: 110px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #919191;
+    padding: 20px;
+
+    span, p {
+      margin-top: 20px;
+    }
+  }
+}
