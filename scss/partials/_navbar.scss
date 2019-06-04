@@ -11,9 +11,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   letter-spacing: 1px;
   font-size: .9rem;
+  min-height: 200px;
 
   a {
     text-decoration: none;
@@ -28,7 +29,6 @@ header {
   .navigation_list {
     display: flex;
     list-style: none;
-
 
     a {
       text-decoration: none;
@@ -76,6 +76,15 @@ header {
             	border-bottom: 10px solid black;
               top: -10px;
               left: 35px;
+            }
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 98px;
+            	height: 20px;
+              top:-10px;
+              left: 0;
             }
           }
 
