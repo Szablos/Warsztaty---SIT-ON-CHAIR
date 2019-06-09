@@ -4,6 +4,10 @@ header {
   padding-top: 10px;
   background-color: black;
   color: white;
+
+  @media screen and (max-width: 740px) {
+    height: 40px;
+  }
 }
 
 .header__navigation {
@@ -15,6 +19,14 @@ header {
   letter-spacing: 1px;
   font-size: .9rem;
   min-height: 200px;
+
+  @media screen and (max-width: 740px) {
+    justify-content: flex-start;
+
+    .logo {
+      margin-left: 50px;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -29,6 +41,10 @@ header {
   .navigation_list {
     display: flex;
     list-style: none;
+
+    @media screen and (max-width: 740px) {
+      display: none;
+    }
 
     a {
       text-decoration: none;
@@ -95,6 +111,38 @@ header {
         }
 
       }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    outline: none;
+    width: 30px;
+    height: 25px;
+    border: 0;
+    border-top: 3px solid #ffffff;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 3px solid #ffffff;
+      transform: translateY(6px);
+    }
+
+    &:after {
+      transform: translateY(15px);
+      transition: 0.3s transform linear;
+    }
+
+    @media screen and (max-width: 740px) {
+      display: block;
     }
   }
 }

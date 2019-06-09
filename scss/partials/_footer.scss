@@ -3,7 +3,7 @@ footer {
 
   .footer_container {
     @include main-width(1440px, 90% - 2%);
-    height: 110px;
+    //height: 110px;
     font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,12 @@ footer {
 
     span, p {
       margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    span {
+      display: none;
     }
   }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -17,7 +18,8 @@
   <div class="main-width">
     <header>
       <nav class="header__navigation">
-        <a href="index.html"><span>SIT <span>ON</span> CHAIR</span></a>
+        <button class="hamburger"></button>
+        <a class="logo" href="index.html"><span>SIT <span>ON</span> CHAIR</span></a>
         <ol class="navigation_list">
             <li id="drop"><a href="#">O FIRMIE</a>
                 <ul id="dropdown">
@@ -32,11 +34,26 @@
       </nav>
     </header>
 
+    <div class="toggler">
+      <ol>
+          <li id="drop2"><a href="#">O FIRMIE</a>
+              <ul id="dropdown2">
+                  <li><a href="#">Aktualności</a></li>
+                  <li><a href="#">Nasz team</a></li>
+                  <li><a href="#">Historia</a></li>
+              </ul>
+          </li>
+          <li><a href="#">GALERIA</a></li>
+          <li><a href="#footer">KONTAKT</a></li>
+      </ol>
+    </div>
+
     <section class="slider">
 
       <div class="header__background">
               <div class="container">
                   <div class="container__naglowek">
+                      <div>
                       <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
                       <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -44,6 +61,7 @@
                           erat, venenatis egestas tortor nec, euismod aliquam
                           lacus. Vivamus scelerisque efficitur suscipit. Curabitur.
                       </p>
+                      </div>
                       <button>ZOBACZ WIĘCEJ</button>
                   </div>
                   <div class="left"><</div>
@@ -140,6 +158,31 @@
               </div>
           </div>
         </div>
+
+    </section>
+
+    <section class="section_3_back">
+
+          <div class="form_container">
+            <div class="price_list">
+                <h3>KONTAKT</h3>
+            </div>
+            <form class="main_form">
+              <div class="form1">
+                <input type="text" placeholder="imię"></input>
+                <input type="text" placeholder="email"></input>
+                <textarea name="wiadomość" rows="8" cols="80" placeholder="wiadomość"></textarea>
+              </div>
+              <div class="form2">
+                <div class="img_form"></div>
+                <div class="check_box">
+                  <input type="checkbox" id="fruit1">
+                  <label for="fruit1">Zgadzam się na przetwarzanie moich danych osobowych</label>
+                </div>
+                <button>Wyślij</button>
+              </div>
+            </form>
+          </div>
 
     </section>
 

@@ -21,6 +21,10 @@
   .image {
       margin-top: 30px;
       margin-left: 30px;
+
+      @media screen and (max-width: 805px) {
+        margin-left: 0;
+      }
   }
 
   .image__1 {
@@ -83,5 +87,10 @@
         height: 6px;
         background-color: $fontSpecialColor;
     }
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
