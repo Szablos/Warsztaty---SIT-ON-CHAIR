@@ -42,4 +42,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     this.style.transform = "none";
   });
 
+  let offersChoose = $('.offers__flex').children('div');
+  let btnChoose = offersChoose.children('button');
+  console.log(btnChoose);
+
+  btnChoose.each( index => {
+    btnChoose.eq(index).on('click', () => {
+      if(btnChoose.eq(index).text() == 'DOŁĄCZ') {
+        btnChoose.eq(index).text('ODZNACZ');
+        offersChoose.eq(index).removeClass('offers');
+        offersChoose.eq(index).addClass('active_choose');
+      }else {
+        btnChoose.eq(index).text('DOŁĄCZ');
+        offersChoose.eq(index).removeClass('active_choose');
+        offersChoose.eq(index).addClass('offers');
+
+      }
+    })
+  })
+
 });
